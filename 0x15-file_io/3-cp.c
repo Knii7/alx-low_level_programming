@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * error_file - check  files  be opn
+ * error_file - check if file can be opend
  * @file_from: file_from
  * @file_to: file_to
- * @argv: argument vecto
+ * @argv: arguments vectr
  * Return: no return
  */
 void error_file(int file_from, int file_to, char *argv[])
@@ -17,15 +17,15 @@ void error_file(int file_from, int file_to, char *argv[])
 	}
 	if (file_to == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Cannot write to %s\n", argv[2]);
-		exit(99);
+	dprintf(STDERR_FILENO, "Error: Cannot write to %s\n", argv[2]);
+	exit(99);
 	}
 }
 
 /**
- * main - check the code fr Holberton Schl student
- * @argc: numbr of argument
- * @argv: argument vector
+ * main - check  code for Holberton Schl studnt
+ * @argc: numb of argument
+ * @argv: arguments vectr
  * Return: Always 0
  */
 int main(int argc, char *argv[])
